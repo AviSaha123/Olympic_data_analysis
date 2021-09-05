@@ -11,9 +11,10 @@ import preprocessing, helper
 df = pd.read_csv(r'athlete_events.csv')
 regions_df = pd.read_csv(r'noc_regions.csv')
 
+st.title('Olympics Data Dashboard')
+
 
 df = preprocessing.preprocessors(df, regions_df)
-
 user_choice = st.sidebar.radio(
     
     'Enter Your Selection',
