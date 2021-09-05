@@ -8,9 +8,8 @@ import preprocessing, helper
 
 
 
-df = pd.read_csv(r'data\athlete_events.csv')
-regions_df = pd.read_csv(
-    r'data\noc_regions.csv')
+df = pd.read_csv(r'athlete_events.csv')
+regions_df = pd.read_csv(r'noc_regions.csv')
 
 
 df = preprocessing.preprocessors(df, regions_df)
